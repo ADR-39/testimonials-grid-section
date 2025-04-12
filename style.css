@@ -97,7 +97,16 @@ body {
 
 .card:nth-child(1) {
     background-color: var(--purple-500-color);
-    color: var(--purple-50-color);
+
+    .card-title,
+    .profile-name {
+        color: var(--purple-50-color);
+    }
+
+    .card-description,
+    .profile-role {
+        color: var(--purple-300-color);
+    }
 
     .profile-picture {
         border: 2px solid var(--purple-300-color);
@@ -106,10 +115,19 @@ body {
 
 .card:nth-child(2) {
     background-color: var(--grey-500-color);
-    color: var(--white-color);
 
     .profile-picture {
         border: 2px solid var(--grey-200-color);
+    }
+
+    .card-title,
+    .profile-name {
+        color: var(--white-color);
+    }
+
+    .card-description,
+    .profile-role {
+        color: var(--grey-200-color);
     }
 }
 
@@ -130,10 +148,19 @@ body {
 
 .card:nth-child(4) {
     background-color: var(--dark-blue-color);
-    color: var(--grey-200-color);
 
     .profile-picture {
         border: 2px solid var(--purple-500-color);
+    }
+
+    .card-title,
+    .profile-name {
+        color: var(--grey-100-color);
+    }
+
+    .card-description,
+    .profile-role {
+        color: var(--grey-200-color);
     }
 }
 
