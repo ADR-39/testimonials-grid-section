@@ -141,7 +141,7 @@ body {
     .card-grid {
         margin: 14.375rem 10.125rem;
 
-        grid-template-columns: repeat(4, 15.275rem);
+        grid-template-columns: repeat(4, 15.7rem);
         grid-template-rows: 1fr 1fr;
     }
 
