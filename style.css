@@ -164,6 +164,10 @@ body {
     }
 }
 
+.card {
+    position: relative;
+}
+
 @media (width >= 68rem) {
     .card-grid {
         margin: 14.375rem 10.125rem;

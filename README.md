@@ -53,7 +53,11 @@ To position relative to parent:
 
 > `absolute` positions relative to the document, unless the parent is `relative`
 
+Having the grid card with `position: relative` solved the problem of shadows rendering
+over elements close to the main card element.
+
 ### Useful resources
+- [CSS shadows under adjacent elements article](https://blog.dudak.me/2014/css-shadows-under-adjacent-elements/#:~:text=The%20problem,a%20box%20and%20its%20shadow.)
 
 ## Author
 ## Acknowledgments
