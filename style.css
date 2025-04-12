@@ -1,0 +1,138 @@
+/* barlow-semi-condensed-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/barlow-semi-condensed-v15-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-semi-condensed-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 600;
+  src: url('fonts/barlow-semi-condensed-v15-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    /* color variables */
+    --purple-50-color: hsl(260, 100%, 95%);
+    --purple-300-color: hsl(264, 82%, 80%);
+    --purple-500-color: hsl(263, 55%, 52%);
+    --white-color: hsl(0, 0%, 100%);
+    --grey-100-color: hsl(214, 17%, 92%);
+    --grey-200-color: hsl(0, 0%, 81%);
+    --grey-400-color: hsl(224, 10%, 45%);
+    --grey-500-color: hsl(217, 19%, 35%);
+    --dark-blue-color: hsl(219, 29%, 14%);
+    --black-color: hsl(0, 0%, 7%);
+
+    --sans-serif-font: 'Barlow Semi Condensed', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--sans-serif-font);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.attribution {
+    display: none;
+}
+
+.profile-role {
+    font-size: 11px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-description {
+    line-height: 1.4;
+}
+
+.card {
+    max-width: 300px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 30px 30px 100px grey;
+
+    /* grid layout */
+    display: grid;
+    gap: 18px;
+}
+
+.card-grid {
+    margin: 73px 32px;
+
+    /* grid layout */
+    display: grid;
+    place-content: center;
+    gap: 30px;
+}
+
+.profile-picture {
+    max-width: 33px;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+}
+
+.card-header {
+    /* grid layout */
+    display: grid;
+    grid-template-columns: 33px 1fr;
+    gap: 14px;
+}
+
+.card:nth-child(1) {
+    background-color: var(--purple-500-color);
+    color: var(--purple-50-color);
+
+    .profile-picture {
+        border: 2px solid var(--purple-300-color);
+    }
+}
+
+.card:nth-child(2) {
+    background-color: var(--grey-500-color);
+    color: var(--white-color);
+
+    .profile-picture {
+        border: 2px solid var(--grey-200-color);
+    }
+}
+
+.card:nth-child(3),
+.card:nth-child(5) {
+    background-color: var(--white-color);
+
+    .card-title,
+    .profile-name {
+        color: var(--grey-500-color);
+    }
+
+    .card-description,
+    .profile-role {
+        color: var(--grey-400-color);
+    }
+}
+
+.card:nth-child(4) {
+    background-color: var(--dark-blue-color);
+    color: var(--grey-200-color);
+
+    .profile-picture {
+        border: 2px solid var(--purple-500-color);
+    }
+}
