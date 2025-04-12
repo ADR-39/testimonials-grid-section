@@ -39,7 +39,19 @@ Users should be able to:
 - vanilla css
 
 ### What I learned
+To position relative to parent:
+```css
+#parent {
+  position: relative;
+}
 
+#child {
+  position: absolute;
+  right: value;
+}
+```
+
+> `absolute` positions relative to the document, unless the parent is `relative`
 
 ### Useful resources
 
